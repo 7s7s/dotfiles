@@ -30,5 +30,15 @@ if has('vim_starting') && dein#check_install()
 endif
 " }}}
 
+" NERDTree settings---------------------------------------------
+ "  Display
+    let g:NERDTreeDirArrows = 1
+    let g:NERDTreeDirArrowsExpandable = '▶'
+    let g:NERDTreeDirArrowCollapsible = '▼'
+ "  Shortcut
+    nnoremap <silent> <C-n> :NERDTreeToggle<CR>
+"---------------------------------------------------------------
+
 filetype plugin indent on
+set number
 syntax enable
