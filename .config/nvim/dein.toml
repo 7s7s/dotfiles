@@ -1,11 +1,12 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
-[[plugins]] # カーソル位置のコンテキストに合わせてftを切り替える
+#Set the buffer filetype based on the code block the cursor currently resides in.
+#The code block filetype is determined by the context_filetype.vim plugin.
+[[plugins]] 
 repo = 'osyo-manga/vim-precious'
 depends = ['context_filetype.vim']
-
-[[plugins]] # カーソル位置のコンテキストのftを判定するライブラリ
+[[plugins]]
 repo = 'Shougo/context_filetype.vim'
 
 [[plugins]] # toml syntax
@@ -16,12 +17,12 @@ repo = 'mxw/vim-jsx'
 [[plugins]] #javascript highlight
 repo = 'pangloss/vim-javascript'
 
-[[plugins]] # カラースキーマ
+[[plugins]] # colorscheme
 repo = 'joshdick/onedark.vim'
 hook_add = '''
   "set background=dark
-  " colorscheme 設定は source 後に行う必要があるので VimEnter で行う。
-  " 但し Colorscheme イベントの発生が抑制されないよう nented を付ける。
+  "Use VimEnter on the grounds that you have to setting colorscheme after source command.
+  " and grant nented option because of avoidance of restrain event call.
   au MyAutoCmd VimEnter * nested colorscheme onedark
 '''
 
@@ -29,5 +30,5 @@ hook_add = '''
 repo = 'Shougo/deoplete.nvim'
 hook_add = 'let g:deoplete#enable_at_startup = 1'
 
-[[plugins]]
+[[plugins]] # NERDTree
 repo = 'scrooloose/nerdtree'
