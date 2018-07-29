@@ -11,6 +11,10 @@ repo = 'Shougo/context_filetype.vim'
 [[plugins]] # toml syntax
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
+[[plugins]] # jsx highlight
+repo = 'mxw/vim-jsx'
+[[plugins]] #javascript highlight
+repo = 'pangloss/vim-javascript'
 
 [[plugins]] # カラースキーマ
 repo = 'joshdick/onedark.vim'
