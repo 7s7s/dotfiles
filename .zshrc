@@ -144,6 +144,8 @@ function myip() {
 s() { pwd > ~/.save_dir ; }
 i() { cd "$(cat ~/.save_dir)" ; }
 
+#setopt
+setopt no_beep
 
 #Path
 export PATH=/usr/local:$PATH
@@ -153,6 +155,3 @@ eval "$(pyenv init -)"
 export EDITOR=vim
 export VISUAL=vim
 export XDG_CONFIG_HOME=~/.config
-
-#setopt
-setopt no_beep
