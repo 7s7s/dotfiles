@@ -32,3 +32,6 @@ hook_add = 'let g:deoplete#enable_at_startup = 1'
 
 [[plugins]] # NERDTree
 repo = 'scrooloose/nerdtree'
+
+[[plugins]] # ctrlp
+repo = 'kien/ctrlp.vim'
